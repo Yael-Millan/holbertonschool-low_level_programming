@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-char letter; 
+char alpha;
 
 for (i = 0 ; i < 10 ; i++)
 putchar((i % 10) + '0');
