@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - print if the number is positive, zero, or negative
  *
@@ -13,7 +14,7 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 if (ch != 'e' && ch != 'q')
 {
-        putchar(ch);
+putchar(ch);
 }
 }
 putchar('\n');
