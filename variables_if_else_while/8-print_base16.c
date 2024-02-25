@@ -1,22 +1,49 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
- * main - print if the number is positive, zero, or negative
- *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative
- * Return: 0
- */
+*main - Prints all single digits of base 16 followed by new line
+*
+*Return: returns 0
+*/
 int main(void)
 {
-char alpha;
+int digit;
 
-for (i = 0 ; i < 10 ; i++)
-putchar((i % 10) + '0');
-for (letter = 'a'; letter <= 'f'; letter++)
-putchar(letter);
- 
+for (digit = '0'; digit <= '9'; digit++)
+{
+putchar(digit);
+if (digit == '9')
+{
+digit = 'a';
+for (; digit <= 'f'; digit++)
+{
+putchar(digit);
+}
+break;
+}
 }
 putchar('\n');
 return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
