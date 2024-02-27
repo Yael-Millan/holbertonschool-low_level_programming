@@ -1,29 +1,50 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-*  _strncpy - C function that copies a string, including the
-*  terminating null byte, using at most an inputted number of bytes.
-*  If the length of the source string is less than the maximum byte number,
-*  the remainder of the destination string is filled with null bytes.
-*  Works identically to the standard library function `strncpy`.
-*@dest: buffer storing the string copy
-*@src:the source string
-*@n:max nummber of byte copied
-*Return: returns
-*/
-
+ *_strncpy - concatenates two strings
+ *@dest: pointer for the first string we want to change
+ *@src: pointer  for the second string
+ *@n: number of bytes
+ *
+ *Return: the new string dest with n bytes new
+ */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i;
+int j;
 
-for (i = 0; i < n && src[i] != '\0'; i++)
-dest[i] = src[i];
-
-for ( ; i < n; i++)
-dest[i] = '\0';
-
+for (j = 0; j < n; j++)
+{
+dest[j] = src[j];
+}
+for ( ; j < n; j++)
+dest[j] = '\0';
 return (dest);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   
