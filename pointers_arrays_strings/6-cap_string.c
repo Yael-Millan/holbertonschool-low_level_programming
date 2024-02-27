@@ -33,4 +33,4 @@ s[count + 1] = s[count + 1] - 32;
 count++;
 }
 return (s);
-
+{
