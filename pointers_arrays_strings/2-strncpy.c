@@ -1,25 +1,73 @@
-#include "main.h" 
+#include "main.h"
 
 /**
- *_strncpy - concatenates two strings
- *@dest: pointer for the first string we want to change
- *@src: pointer  for the second string
- *@n: number of bytes
+ * _strncpy - copy a string
+ * @dest: destination copying to
+ * @src: source copying from
+ * @n: size
  *
- *Return: the new string dest with n bytes new
+ * Return: copied string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int j;
+int i = 0;
 
-for (j = 0; j < n && src[j] != '\0'; j++)
+while (*(src + i) != '\0' && i < n)
 {
-dest[j] = src[j];
+*(dest + i) = *(src + i);
+i++;
 }
-for ( ; j < n; j++)
-dest[j] = '\0';
+while (i < n)
+{
+dest[i] = '\0';
+i++;
+}
+
 return (dest);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
