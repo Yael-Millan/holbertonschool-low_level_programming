@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
 *
-*size_t - sizee t
+*size_t - find number of elements in list
 *
 *@head: pointer list h
 */
