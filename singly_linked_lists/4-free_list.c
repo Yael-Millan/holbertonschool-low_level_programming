@@ -5,7 +5,6 @@
 *@head: A pointer list head
 *
 */
-
 void free_list(list_t *head)
 {
 list_t *tmp;
