@@ -3,6 +3,7 @@
 /**
 *free_list d - Freees a list
 *@head: A pointer list head
+*
 */
 
 void free_list(list_t *head)
